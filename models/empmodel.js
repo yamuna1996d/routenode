@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 const regSchema= new mongoose.Schema({
-    empName: String,
+    name: String,
     empCode: Number,
-    empCompany: String,
-    empEmail:String,
-    empPhone:Number,
+    company: String,
+    email:String,
+    phone:Number,
     empPassword:String
 });
 const regmodel= mongoose.model('registrations',regSchema);
